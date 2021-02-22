@@ -10,7 +10,7 @@
         <field name="inherit_id" ref="account.view_account_bank_journal_form"/>
         <field name="arch" type="xml">
             <group name="bank_statement" position="after">
-                <group name="bank_inter" string="Bank Inter API" attrs="{'invisible': ['|', ('type', '!=', 'bank'),('bank_code_bc', '!=', '077')]}">
+                <group name="bank_inter" string="Bank Inter API" attrs="{'invisible': ['|', ('type', '!=', 'bank')]}">
                     <field name="bank_inter_cert"/>
                     <field name="bank_inter_key"/>
                 </group>
@@ -24,7 +24,7 @@
         <field name="inherit_id" ref="account.view_account_journal_form"/>
         <field name="arch" type="xml">
             <group name="group_alias" position="after">
-                <group name="bank_inter" string="Bank Inter API" attrs="{'invisible': ['|', ('type', '!=', 'bank'),('bank_code_bc', '!=', '077')]}">
+                <group name="bank_inter" string="Bank Inter API" attrs="{'invisible': ['|', ('type', '!=', 'bank')]}">
                     <field name="bank_inter_cert"  />
                     <field name="bank_inter_key"/>
                 </group>

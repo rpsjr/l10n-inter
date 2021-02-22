@@ -22,7 +22,7 @@ class AccountInvoice(models.Model):
         pdf_merger = PdfFileMerger()
 
         temp_files = []
-        for move_line in self.move_line_receivable_ids:
+        for move_line in self.invoice_line_ids:
             move_line.generate_pdf_boleto()
 
             if move_line.pdf_boleto_id:

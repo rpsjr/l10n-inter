@@ -24,6 +24,9 @@ class AccountMoveLine(models.Model):
         ondelete='cascade'
     )
 
+    own_number = fields.Integer(string='Nosso número',
+                              help="Nosso número")
+
     def generate_pdf_boleto(self):
         """
         Creates a new attachment with the Boleto PDF

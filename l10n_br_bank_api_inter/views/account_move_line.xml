@@ -7,9 +7,9 @@
     <record model="ir.ui.view" id="account_move_line_form_view">
         <field name="name">account.move.line.form (in l10n_br_bank_api_inter)</field>
         <field name="model">account.move.line</field>
-        <field name="inherit_id" ref="l10n_br_account_payment_order.cnab_view_move_line_form_inherit"/>
+        <field name="inherit_id" ref="account_payment_order.view_move_line_form"/>
         <field name="arch" type="xml">
-            <field name="payment_method_code" position="after">
+            <field name="partner_bank_id" position="after">
                 <button name="print_pdf_boleto" type="object" string="PDF Boleto" class="oe_highlight" />
             </field>
         </field>

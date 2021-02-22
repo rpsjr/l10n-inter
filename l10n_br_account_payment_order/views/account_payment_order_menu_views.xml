@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <odoo><!-- This Menu Item Must have a parent -->
     <menuitem id="menu_retorno_categ" name="Retorno"
-              parent="account_payment_order.payment_root" sequence="3"/>
+              parent="account.menu_finance_payables" sequence="3"/>
     <menuitem id="menu_remessa_categ" name="Remessa"
-              parent="account_payment_order.payment_root" sequence="1"/>
+              parent="account.menu_finance_receivables" sequence="1"/>
 
     <record id="account_payment_order.account_payment_order_outbound_action" model="ir.actions.act_window">
         <field name="name">Payment Orders</field>
